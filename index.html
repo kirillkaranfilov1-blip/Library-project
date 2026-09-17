@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bookly — Библиотека</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-box">
+
+        <a href="#" class="logo">
+            <span>Book</span>ly
+        </a>
+
+        <nav class="nav">
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <a href="Mybooks.html">Мои книги</a>
+            <a href="reviews.html">Отзывы</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="profile-btn">
+                Войти
+            </button>
+        </div>
+
+    </div>
+</header>
+
+
+<select class="sort" id="sortBooks">
+    <option value="default">Сортировка</option>
+    <option value="popular">По популярности</option>
+    <option value="rating">По рейтингу</option>
+    <option value="title">По названию</option>
+    <option value="year">По году</option>
+</select>
+
+<main>
+
+    <section class="hero">
+        <div class="container hero-box">
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    📚 Твоя персональная библиотека
+                </span>
+
+                <h1>
+                    Найди книгу,
+                    <span>которую захочется прочитать</span>
+                </h1>
+
+                <p>
+                    Исследуй каталог, сохраняй понравившиеся книги,
+                    оставляй отзывы и следи за своим прогрессом.
+                </p>
+
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+
+                    <input
+    id="search"
+    type="text"
+    placeholder="Найти книгу, автора или жанр..."
+>
+
+                    <button>
+                        Найти
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <div class="book-card-large">
+                    <div class="book-cover">
+                        <span>BOOK</span>
+                    </div>
+
+                    <div class="book-info">
+                        <h3>Название книги</h3>
+                        <p>Имя автора</p>
+
+                        <div class="book-rating">
+                            ★ 4.8
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="books-grid" id="booksGrid"></div>
+<div class="pagination" id="pagination"></div>
+
+    <section class="stats">
+        <div class="container stats-box">
+
+            <div class="stat">
+                <strong>1,200+</strong>
+                <span>Книг</span>
+            </div>
+
+            <div class="stat">
+                <strong>450+</strong>
+                <span>Пользователей</span>
+            </div>
+
+            <div class="stat">
+                <strong>890+</strong>
+                <span>Отзывов</span>
+            </div>
+
+            <div class="stat">
+                <strong>4.8</strong>
+                <span>Средний рейтинг</span>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container footer-box">
+
+        <a href="#" class="logo">
+            <span>Book</span>ly
+        </a>
+
+        <p>
+            Твоя библиотека в одном месте.
+        </p>
+
+        <span>
+            © 2026 Bookly
+        </span>
+
+    </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
