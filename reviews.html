@@ -1,321 +1,194 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-    <title>Отзывы — Bookly</title>
+<title>Отзывы — Bookly</title>
+
+
 </head>
 <body>
 
 <header class="header">
     <div class="container header-box">
 
-        <a href="index.html" class="logo">
-            <span>Book</span>ly
-        </a>
+    <a href="index.html" class="logo">
+        <span>Book</span>ly
+    </a>
 
-        <nav class="nav">
-            <a href="index.html">Главная</a>
-            <a href="index.html#catalog">Каталог</a>
-            <a href="my-books.html">Мои книги</a>
-            <a href="reviews.html" class="active-link">Отзывы</a>
-        </nav>
+    <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="index.html#catalog">Каталог</a>
+        <a href="Mybooks.html">Мои книги</a>
+        <a href="reviews.html" class="active-link">Отзывы</a>
+    </nav>
 
-        <div class="header-actions">
-            <button class="profile-btn">
-                Профиль
-            </button>
-        </div>
-
+    <div class="header-actions">
+        <button class="profile-btn">
+            Профиль
+        </button>
     </div>
-</header>
 
+</div>
+
+
+</header>
 
 <main>
 
-    <section class="reviews-hero">
-        <div class="container">
+<section class="reviews-hero">
+    <div class="container">
 
-            <span class="section-label">
-                Сообщество читателей
-            </span>
+        <span class="section-label">
+            Сообщество читателей
+        </span>
 
-            <h1>
-                Отзывы о книгах
-            </h1>
+        <h1>
+            Отзывы о книгах
+        </h1>
 
-            <p>
-                Делись своими впечатлениями и узнавай мнение
-                других читателей.
-            </p>
+        <p>
+            Делись своими впечатлениями и узнавай мнение
+            других читателей.
+        </p>
 
-        </div>
-    </section>
+    </div>
+</section>
 
+<section class="reviews">
+    <div class="container reviews-layout">
 
-    <section class="reviews">
-        <div class="container reviews-layout">
+        <div class="reviews-content">
 
-            <div class="reviews-content">
-
-                <div class="reviews-top">
-                    <div>
-                        <h2>Последние отзывы</h2>
-                        <p>Мнения пользователей о прочитанных книгах</p>
-                    </div>
-
-                    <select class="reviews-sort">
-                        <option>Новые</option>
-                        <option>Высокий рейтинг</option>
-                        <option>Низкий рейтинг</option>
-                    </select>
+            <div class="reviews-top">
+                <div>
+                    <h2>Последние отзывы</h2>
+                    <p>Мнения пользователей о прочитанных книгах</p>
                 </div>
 
+                <select class="reviews-sort" id="reviewsSort">
+                    <option value="new">Новые</option>
+                    <option value="high">Высокий рейтинг</option>
+                    <option value="low">Низкий рейтинг</option>
+                </select>
+            </div>
 
-                <div class="review-list">
+            <div class="review-list" id="reviewList"></div>
 
-                    <article class="review-card">
+        </div>
 
-                        <div class="review-head">
+        <aside class="review-form-box">
 
-                            <div class="review-user">
+            <div class="review-form-header">
 
-                                <div class="user-avatar">
-                                    K
-                                </div>
+                <span class="form-icon">
+                    ✎
+                </span>
 
-                                <div>
-                                    <h3>Kirill</h3>
-                                    <span>Сегодня</span>
-                                </div>
-
-                            </div>
-
-                            <div class="review-rating">
-                                ★★★★★
-                            </div>
-
-                        </div>
-
-
-                        <div class="review-book">
-                            <div class="mini-cover">
-                                BOOK
-                            </div>
-
-                            <div>
-                                <h4>
-                                    Гарри Поттер и философский камень
-                                </h4>
-
-                                <p>
-                                    J. K. Rowling
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <p class="review-text">
-                            Очень интересная книга. Понравилась
-                            атмосфера, персонажи и история.
-                            Читается легко и хочется продолжать.
-                        </p>
-
-                    </article>
-
-
-                    <article class="review-card">
-
-                        <div class="review-head">
-
-                            <div class="review-user">
-
-                                <div class="user-avatar">
-                                    A
-                                </div>
-
-                                <div>
-                                    <h3>Alex</h3>
-                                    <span>2 дня назад</span>
-                                </div>
-
-                            </div>
-
-                            <div class="review-rating">
-                                ★★★★☆
-                            </div>
-
-                        </div>
-
-
-                        <div class="review-book">
-
-                            <div class="mini-cover">
-                                BOOK
-                            </div>
-
-                            <div>
-                                <h4>
-                                    Великий Гэтсби
-                                </h4>
-
-                                <p>
-                                    F. Scott Fitzgerald
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <p class="review-text">
-                            Хорошая книга с интересной историей.
-                            Некоторые моменты показались мне
-                            немного медленными.
-                        </p>
-
-                    </article>
-
-
-                    <article class="review-card">
-
-                        <div class="review-head">
-
-                            <div class="review-user">
-
-                                <div class="user-avatar">
-                                    M
-                                </div>
-
-                                <div>
-                                    <h3>Maria</h3>
-                                    <span>5 дней назад</span>
-                                </div>
-
-                            </div>
-
-                            <div class="review-rating">
-                                ★★★★★
-                            </div>
-
-                        </div>
-
-
-                        <div class="review-book">
-
-                            <div class="mini-cover">
-                                BOOK
-                            </div>
-
-                            <div>
-                                <h4>
-                                    Властелин колец
-                                </h4>
-
-                                <p>
-                                    J. R. R. Tolkien
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <p class="review-text">
-                            Одна из тех книг, к которым хочется
-                            возвращаться снова. Очень понравился
-                            мир и герои.
-                        </p>
-
-                    </article>
-
+                <div>
+                    <h2>Оставить отзыв</h2>
+                    <p>Только для прочитанных книг</p>
                 </div>
 
             </div>
 
+            <form class="review-form" id="reviewForm">
 
-            <aside class="review-form-box">
+                <label>
+                    Книга
+                </label>
 
-                <div class="review-form-header">
-                    <span class="form-icon">
-                        ✎
-                    </span>
+                <select id="reviewBook" required>
+                    <option value="">
+                        Выберите прочитанную книгу
+                    </option>
+                </select>
 
-                    <div>
-                        <h2>Оставить отзыв</h2>
-                        <p>Поделись своим мнением</p>
-                    </div>
-                </div>
+                <label>
+                    Ваша оценка
+                </label>
 
+                <div class="stars" id="stars">
 
-                <form class="review-form">
-
-                    <label>
-                        Книга
-                    </label>
-
-                    <select>
-                        <option>Выберите книгу</option>
-                        <option>Гарри Поттер</option>
-                        <option>Великий Гэтсби</option>
-                        <option>Властелин колец</option>
-                    </select>
-
-
-                    <label>
-                        Ваша оценка
-                    </label>
-
-                    <div class="stars">
-                        <button type="button">★</button>
-                        <button type="button">★</button>
-                        <button type="button">★</button>
-                        <button type="button">★</button>
-                        <button type="button">★</button>
-                    </div>
-
-
-                    <label>
-                        Отзыв
-                    </label>
-
-                    <textarea
-                        placeholder="Расскажите о своих впечатлениях..."
-                    ></textarea>
-
-
-                    <button class="submit-review" type="submit">
-                        Опубликовать отзыв
+                    <button type="button" data-rating="1">
+                        ★
                     </button>
 
-                </form>
+                    <button type="button" data-rating="2">
+                        ★
+                    </button>
 
-            </aside>
+                    <button type="button" data-rating="3">
+                        ★
+                    </button>
 
-        </div>
-    </section>
+                    <button type="button" data-rating="4">
+                        ★
+                    </button>
+
+                    <button type="button" data-rating="5">
+                        ★
+                    </button>
+
+                </div>
+
+                <div class="rating-value" id="ratingValue">
+                    Выберите оценку
+                </div>
+
+                <label>
+                    Отзыв
+                </label>
+
+                <textarea
+                    id="reviewText"
+                    placeholder="Расскажите о своих впечатлениях..."
+                    required
+                ></textarea>
+
+                <button
+                    class="submit-review"
+                    type="submit"
+                >
+                    Опубликовать отзыв
+                </button>
+
+            </form>
+
+        </aside>
+
+    </div>
+</section>
+
 
 </main>
-
 
 <footer class="footer">
     <div class="container footer-box">
 
-        <a href="index.html" class="logo">
-            <span>Book</span>ly
-        </a>
 
-        <p>
-            Твоя библиотека в одном месте.
-        </p>
+    <a href="index.html" class="logo">
+        <span>Book</span>ly
+    </a>
 
-        <span>
-            © 2026 Bookly
-        </span>
+    <p>
+        Твоя библиотека в одном месте.
+    </p>
 
-    </div>
+    <span>
+        © 2026 Bookly
+    </span>
+
+</div>
+
+
 </footer>
+
+<script src="Reviews.js"></script>
 
 </body>
 </html>
