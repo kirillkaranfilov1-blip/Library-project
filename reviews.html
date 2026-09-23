@@ -12,31 +12,38 @@
 
 </head>
 <body>
-
-<header class="header">
+ <header class="header">
     <div class="container header-box">
+
 
     <a href="index.html" class="logo">
         <span>Book</span>ly
     </a>
 
-    <nav class="nav">
+    <nav class="nav" id="navMenu">
         <a href="index.html">Главная</a>
         <a href="index.html#catalog">Каталог</a>
         <a href="Mybooks.html">Мои книги</a>
-        <a href="reviews.html" class="active-link">Отзывы</a>
+        <a href="reviews.html">Отзывы</a>
     </nav>
 
     <div class="header-actions">
         <button class="profile-btn">
             Профиль
         </button>
+
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 
 </div>
 
 
-</header>
+</header> 
+
 
 <main>
 
@@ -60,6 +67,9 @@
 </section>
 
 <section class="reviews">
+    <button class="review-open-btn" id="openReviewForm">
+    + Оставить отзыв
+</button>
     <div class="container reviews-layout">
 
         <div class="reviews-content">
@@ -81,7 +91,7 @@
 
         </div>
 
-        <aside class="review-form-box">
+        <aside class="review-form-box" id="reviewFormBox">
 
             <div class="review-form-header">
 
@@ -189,6 +199,7 @@
 </footer>
 
 <script src="Reviews.js"></script>
-
+<script src="Burger.js"></script>
+<script src="ReviewForm.js"></script>
 </body>
 </html>

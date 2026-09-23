@@ -10,28 +10,38 @@
 </head>
 <body>
 
-<header class="header">
+ <header class="header">
     <div class="container header-box">
 
-        <a href="index.html" class="logo">
-            <span>Book</span>ly
-        </a>
 
-        <nav class="nav">
-            <a href="index.html">Главная</a>
-            <a href="index.html#catalog">Каталог</a>
-            <a href="Mybooks.html" class="active-link">Мои книги</a>
-            <a href="reviews.html">Отзывы</a>
-        </nav>
+    <a href="index.html" class="logo">
+        <span>Book</span>ly
+    </a>
 
-        <div class="header-actions">
-            <button class="profile-btn">
-                Профиль
-            </button>
-        </div>
+    <nav class="nav" id="navMenu">
+        <a href="index.html">Главная</a>
+        <a href="index.html#catalog">Каталог</a>
+        <a href="Mybooks.html">Мои книги</a>
+        <a href="reviews.html">Отзывы</a>
+    </nav>
 
+    <div class="header-actions">
+        <button class="profile-btn">
+            Профиль
+        </button>
+
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
-</header>
+
+</div>
+
+
+</header> 
+
 
 
 <main>
@@ -325,5 +335,6 @@
 </footer>
 
 <script src="Books.js"></script>
+<script src="Burger.js"></script>
 </body>
 </html>
